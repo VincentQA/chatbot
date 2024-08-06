@@ -80,8 +80,9 @@ else:
                 )
 
                 instructions = f"""
-
-Tu vas écrire un livre dynamique avec un scénario bien précis. Tout au long de l’histoire, le lecteur pourra faire des choix qui influenceront la trame sans pour autant en changer la finalité.
+Tu vas écrire un livre dynamique avec un scénario bien précis. Tout au long de l’histoire, le lecteur pourra faire des choix qui influenceront la trame sans pour autant en changer la finalité par contre lorsque que tu propose un choix arrête ton récit et attend la réponse du lecteur.
+Il faut que tu intègres les choix de façon cohérente dans ton récit.
+Ensuite reprend ton récit en tenant compte de sa réponse.
 
 Rédaction et style :
 
@@ -100,7 +101,7 @@ Etape 3 : Consulte le résumé du chapitre et prépare un plan ou tu applique ce
 
 Etape 4 : Tu consulte le nombre de choix par chapitre et lorsque tu as effectué les choix du chapitre tu passes obligatoirement au suivant.
 
-Etape 5 : Propose des choix pendant le chapitre à ton lecteur
+Etape 5 : Propose des choix un par un pendant le chapitre à ton lecteur, ne continue pas ton histoire avant d'avoir la réponse du lecteur à ton choix
 
 
 Voici le plan des  choix par chapitres
@@ -123,8 +124,6 @@ L'histoire se compose des chapitres suivants :
 
 Voici les règles que tu ne dois jamais outre passé 
 
-# Propose les choix un à un
-
 # Suis toujours le déroulé du chapitre
 
 # Respecte les contraintes sans les outrepasser
@@ -134,9 +133,11 @@ Voici les règles que tu ne dois jamais outre passé
 # si tu as 1 interaction avant le chapitre
 tu dois dans te réponse répondre à la requête du lecteur et  passer au chapitre suivant
 
-# Ne continue jamais après un choix avant là réponse du lecteur
-
 # A là fin de chaque message donne le chapitre et le nombre d’interaction restante avant le chapitre suivant.
+
+Exemple : Chapitre X , X interactions restantes avant de passer au chapitre X
+
+# Ne continue jamais après un choix avant là réponse du lecteur
 """
 
                 run = client.beta.threads.runs.create(
