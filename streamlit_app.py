@@ -10,7 +10,7 @@ client = OpenAI(api_key=OPENAI_API_KEY)
 # Identifiants des assistants depuis les secrets
 ASSISTANT_IDS = {
     "Steve Jobs": st.secrets["ASSISTANT_ID_1"],
-    "Jeff Bezos": st.secrets["ASSISTANT_ID_2"]
+    "Jeff Bezos": st.secrets["ASSISTANT_ID_2"],
     "Elon Musk": st.secrets["ASSISTANT_ID_3"],
     "Mark Zuck": st.secrets["ASSISTANT_ID_4"],
 }
